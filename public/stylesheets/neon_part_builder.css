@@ -1,0 +1,82 @@
+.popover h3, .modal h3 {
+  color: #bf0022; }
+
+.builder {
+  top: 0;
+  padding: 10px 20px 70px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  -webkit-transition: box-shadow 0.2s; }
+  .builder img {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    position: absolute; }
+  .builder .part {
+    float: left;
+    text-align: center;
+    width: 760px;
+    margin: 30px 30px 0 220px; }
+  .builder.affix {
+    width: 900px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+    -webkit-transition: box-shadow 0.2s; }
+
+#part-number {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  background-color: white;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 42px;
+  overflow: hidden;
+  line-height: 2; }
+  #part-number li {
+    display: inline;
+    padding: 0.3em 0.1em;
+    border: 1px solid transparent;
+    border-radius: 3px; }
+    #part-number li.separator {
+      padding: 0.3em 0; }
+    #part-number li.selected {
+      background-color: #ffe0df;
+      border-color: #cc0000; }
+  #part-number span.separator {
+    padding: 0.3em 0.2em; }
+    #part-number span.separator:first-child {
+      padding-left: 0; }
+
+.options {
+  margin-bottom: 40px; }
+  .options h4 {
+    margin-top: 20px; }
+
+.affix {
+  position: fixed; }
+
+ul.flow {
+  overflow: hidden; }
+  ul.flow li {
+    display: block;
+    float: left;
+    width: 81px;
+    height: 81px; }
+
+ul.no-input input {
+  display: none; }
+ul.no-input li {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 5px; }
+  ul.no-input li:hover {
+    background-color: #eeeeee; }
+  ul.no-input li.selected {
+    background-color: #ffe0df;
+    border-color: #cc0000; }
+ul.no-input label {
+  padding: 0;
+  cursor: pointer; }
+ul.no-input img {
+  width: 81px; }

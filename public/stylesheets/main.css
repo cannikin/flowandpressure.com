@@ -1,0 +1,166 @@
+body, input, textarea, button, select {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #af292e;
+  font-weight: 600; }
+
+a {
+  color: #af292e; }
+
+strong {
+  font-weight: 600; }
+
+address {
+  margin: 0; }
+
+.popover {
+  width: 350px; }
+
+.popover-title {
+  font-weight: 600;
+  font-size: 110%; }
+
+.popover-content img {
+  margin-top: 20px; }
+
+.neon h1, .neon h2, .neon h3, .neon h4, .neon h5, .neon h6 {
+  color: #07538e; }
+.neon a {
+  color: #07538e; }
+.neon .btn {
+  color: white; }
+.neon.navbar .nav {
+  margin-left: 520px; }
+
+.back a {
+  position: absolute;
+  padding-left: 90px;
+  top: 5px;
+  color: #07538e;
+  z-index: 3;
+  font-weight: 600; }
+  .back a:hover i {
+    text-decoration: none; }
+.back + .navbar {
+  margin-top: 28px; }
+  .back + .navbar .brand {
+    top: 20px; }
+
+nav {
+  background-color: #af292e;
+  overflow: hidden;
+  margin: 30px 0 10px;
+  height: 54px; }
+  nav .contact {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    font-size: 120%;
+    font-weight: 600;
+    color: #af292e;
+    width: 920px;
+    text-align: right; }
+    nav .contact a {
+      color: #af292e;
+      margin-left: 20px; }
+      nav .contact a:hover {
+        color: #af292e;
+        text-decoration: none; }
+  nav .brand {
+    font-family: Exo, sans-serif;
+    font-weight: 200;
+    font-size: 150%;
+    text-shadow: none;
+    position: absolute;
+    top: 22px;
+    padding: 0 0 0 20px;
+    margin-left: -15px;
+    width: 350px; }
+    nav .brand img {
+      margin-right: 10px;
+      margin-top: -2px; }
+  nav a {
+    color: white; }
+    nav a:hover {
+      color: white;
+      text-decoration: underline; }
+  nav ul {
+    font-size: 120%;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden; }
+  nav li {
+    float: right;
+    margin-right: 1.5em; }
+  nav a {
+    color: white; }
+    nav a:hover {
+      color: white; }
+      nav a:hover i {
+        text-decoration: none; }
+  nav i {
+    vertical-align: middle !important;
+    margin: 0 4px 3px; }
+
+nav.neon {
+  background-color: #07538e;
+  margin-top: 30px; }
+  nav.neon .brand {
+    margin-top: 0; }
+  nav.neon .contact a {
+    color: #07538e; }
+    nav.neon .contact a:hover {
+      color: #07538e; }
+  nav.neon a {
+    color: white; }
+    nav.neon a:hover {
+      color: white; }
+
+.modal textarea {
+  height: 6em; }
+.modal form {
+  margin-top: 30px; }
+
+#distributor-list {
+  width: 100%; }
+  #distributor-list td {
+    vertical-align: top;
+    font-size: 110%;
+    padding: 1em;
+    width: 33%; }
+
+#contact {
+  margin-bottom: 50px;
+  overflow: hidden; }
+  #contact .building {
+    float: left;
+    margin-right: 20px; }
+  #contact .contact {
+    float: left;
+    font-size: 120%;
+    line-height: 1.5; }
+    #contact .contact address {
+      line-height: 1.5; }
+  #contact .email {
+    font-size: 140%;
+    margin-bottom: 0.5em;
+    line-height: 1; }
+
+#product-list {
+  width: 100%; }
+  #product-list td {
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+    padding: 5px; }
+  #product-list .box {
+    width: 225;
+    overflow: hidden;
+    font-size: 120%; }
+    #product-list .box img {
+      height: 300px;
+      display: block;
+      margin-bottom: 10px; }
