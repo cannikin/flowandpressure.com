@@ -111,12 +111,17 @@ $(function() {
     }, 2000);
 
     // Update images
-    if ($parentGroup.attr('data-layer')) {
-      var layers = $parentGroup.attr('data-layer').split(',');
-      $.each(layers, function(index, layer) {
-        $('#layer'+layer).attr('src', '/images/builder/series85/layer'+layer+'-group'+group+'-value'+$this.val()+'.png')
-      })
+    if (group == 2) {
+      $('#layer1').attr('src', '/images/series' + $this.attr('value') + '.png');
     }
+
+    // Update images
+    // if ($parentGroup.attr('data-layer')) {
+    //   var layers = $parentGroup.attr('data-layer').split(',');
+    //   $.each(layers, function(index, layer) {
+    //     $('#layer'+layer).attr('src', '/images/builder/series85/layer'+layer+'-group'+group+'-value'+$this.val()+'.png')
+    //   })
+    // }
   });
 
   // Series 85 has a second stage
