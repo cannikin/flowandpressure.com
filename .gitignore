@@ -20,3 +20,6 @@ doc/
 .DS_Store
 public/*
 .rvmrc
+
+/stylesheets/.sass-cache
+/stylesheets/.sass-cache/*
