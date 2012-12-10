@@ -6,6 +6,10 @@ p.lead Questions? Comments? Get in touch!
   h4 Email sent!
   | Thanks for the email, you'll hear back from us soon!
 
+.alert.alert-error.fade.in(style="display:none")
+  button(type="button" class="close" data-dismiss="alert") &times;
+  .body
+
 #contact
   .building
     img(src="/images/building.jpg")
@@ -36,9 +40,9 @@ p.lead Questions? Comments? Get in touch!
 
 javascript:
   $().alert();
-/ javascript:
-/   $('form').submit(function() {
-/     $.post('/foo', $(form).serialize()).success(function(data) {
-/       console.info(data);
-/     });
-/   });
+  // show the 'thanks' message if we just came back from the server
+  if (location.search.match(/sent/)) {
+    $('.alert-success').show();
+  } else if(location.search.match(/message/)) {
+    $('.alert-error').show().find('.body').html(decodeURIComponent(location.search.split('message=')[1]))
+  }
