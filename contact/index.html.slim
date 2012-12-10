@@ -1,6 +1,11 @@
 h1 Contact Us
 p.lead Questions? Comments? Get in touch!
 
+.alert.alert-success.fade.in(style="display:none")
+  button(type="button" class="close" data-dismiss="alert") &times;
+  h4 Email sent!
+  | Thanks for the email, you'll hear back from us soon!
+
 #contact
   .building
     img(src="/images/building.jpg")
@@ -13,13 +18,13 @@ p.lead Questions? Comments? Get in touch!
       br
       | Chino CA 92710
     | Phone: 
-    a(href="tel:8008646810") 800&middot;864&middot;6810
+    a(href="tel:8008646810") 909&middot;590&middot;0408
     br
     | Fax: 
     a(href="tel:9095904146") 909&middot;590&middot;4146
 
     h3 Ask a Question
-    form
+    form(action="http://utility.ridingtheclutch.com:3010/" method="post")
       label From (your email address)
       input(type="text" name="from" placeholder="Your email")
       label Subject
@@ -28,3 +33,12 @@ p.lead Questions? Comments? Get in touch!
       textarea(name="message")
       .actions
         input(type="submit" value="Send" class="btn btn-primary button")
+
+javascript:
+  $().alert();
+/ javascript:
+/   $('form').submit(function() {
+/     $.post('/foo', $(form).serialize()).success(function(data) {
+/       console.info(data);
+/     });
+/   });
