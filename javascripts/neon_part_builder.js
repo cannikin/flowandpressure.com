@@ -149,6 +149,12 @@ $(function() {
     }
   }
 
+  // Preset a series if present in the URL
+  if (url('?series')) {
+    $('#group-2 input').attr('checked', false);
+    $('#series-' + url('?series')).attr('checked', true);
+  }
+
   // Select the first series just so we have something to show
   $('input:checked').trigger('change');
 
