@@ -57,8 +57,12 @@
     <hr>
 
     <div class="footer">
-      Copyright &copy;2012 Precision Instrumentation Co.
+      Copyright &copy;#{year} Precision Instrumentation Co.
     </div>
+
+    <script type="text/javascript">
+      $('.footer').text($('.footer').text().replace('#{year}', (new Date).getFullYear()));
+    </script>
 
   </body>
 </html>
